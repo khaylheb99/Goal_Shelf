@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Barlow Condensed', sans-serif;
+    --font-sans: 'Plus Jakarta Sans', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #050807;
+  color: #FFFFFF;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, .font-display {
+  font-family: var(--font-display);
+  letter-spacing: 0.02em;
+}
+
+.font-mono, .tabular-nums {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom Sports Glow & Highlights */
+.neon-glow {
+  text-shadow: 0 0 12px rgba(57, 255, 20, 0.4);
+}
+
+.gold-glow {
+  text-shadow: 0 0 12px rgba(255, 215, 0, 0.45);
+}
+
+.pitch-gradient {
+  background: radial-gradient(circle at 50% 0%, rgba(57, 255, 20, 0.12) 0%, rgba(5, 8, 7, 0.98) 75%);
+}
+
+.stadium-border {
+  border: 1px solid rgba(57, 255, 20, 0.18);
+}
+
+.stadium-border-hover:hover {
+  border-color: rgba(57, 255, 20, 0.5);
+  box-shadow: 0 0 20px -5px rgba(57, 255, 20, 0.25);
+}
+
+/* Custom sleek scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #050807;
+}
+::-webkit-scrollbar-thumb {
+  background: #16241a;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00C853;
+}

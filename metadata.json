@@ -1,0 +1,6 @@
+{
+  "name": "GOALSHELF Football Platform",
+  "description": "Nigeria's premier football goal submission and competition platform. Submit timestamped strikes, represent your state, climb the weekly leaderboard, and win ₦500,000 in cash prizes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
